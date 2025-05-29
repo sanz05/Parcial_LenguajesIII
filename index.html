@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registro</title>
+</head>
+<body>
+    <div class="container">
+    <h1 class="h1">Registro</h1>
+    <label>Nombre:
+        <input type="text" name="usuario" id="nombre">
+        <span class="error" id="errorNombre"></span>
+    </label> <br> <br>
+
+    <label>Apellido: 
+        <input type="text" name="apellido" id="apellido">
+        <span class="error" id="errorApellido"></span>
+    </label> <br> <br>
+
+    <label for="dni">DNI: 
+        <input type="number" name="dni" id="dni">
+        <span class="error" id="errorDni"></span>
+    </label> <br> <br>
+
+    <label for="email">Email: 
+        <input type="email" name="email" id="email"> 
+        <span class="error" id="errorEmail"></span>
+    </label> <br> <br>
+
+    <label>Fecha de nacimiento: 
+        <input type="date" name="date" id="date"> 
+        <span class="error" id="errorFecha"></span>
+    </label> <br> <br>
+
+    <button type="button" onclick="validarFormulario()" class="button">Validar Formulario!</button>
+    <div id="msg"></div>
+
+    <button onclick="realizarPreguntas()" class="button">Realizar Preguntas</button> 
+    <div id="respuestas"></div>
+
+    <script src="script.js"></script>
+</div>
+</body>
+</html>
